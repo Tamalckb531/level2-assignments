@@ -6,8 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "a1": "node dist/Assignment-1/solutions.js",
-    "root": "node dist/solution.js"
+    "a1": "node dist/Assignment-1/solutions.js"
   },
   "repository": {
     "type": "git",
