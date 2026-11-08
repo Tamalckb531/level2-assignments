@@ -31,3 +31,11 @@ const getPopularCourses = (courses: Course[], minStudents: number): Course[] => 
     const popularCourses: Course[] = courses.filter((value) => (value.isPublished && value.students >= minStudents)); 
     return popularCourses;
 }
+
+const pluckValues = <T, K extends keyof T> (items: T[], key:K): T[K][] => {
+    const final: T[K][] = [];
+    for (const item of items) {
+        final.push(item[key]);
+    }
+    return final;
+}
