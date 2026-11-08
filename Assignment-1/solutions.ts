@@ -14,3 +14,9 @@ const processInput = (input: InputValue): OutputValue => {
 const formatCoordinate = ([latitude,longitude,locationName]: readonly [number, number, string]): string => {
     return `Location: ${locationName} (${latitude}, ${longitude})`;
 }
+
+const concatenateArrays = <T>(...arrays: T[][]): T[] => {
+    const result: T[] = [];
+    for (const array of arrays) result.push(...array);
+    return result;
+}
