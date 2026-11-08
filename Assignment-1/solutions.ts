@@ -10,3 +10,7 @@ const processInput = (input: InputValue): OutputValue => {
     if (typeof input === "boolean") return input ? "Active" : "Inactive";
     return input * 10;
 }
+
+const formatCoordinate = ([latitude,longitude,locationName]: readonly [number, number, string]): string => {
+    return `Location: ${locationName} (${latitude}, ${longitude})`;
+}
