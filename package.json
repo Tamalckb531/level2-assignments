@@ -1,0 +1,29 @@
+{
+  "name": "level2-assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "a1": "node dist/Assignment-1/solution.js",
+    "a2": "node dist/Assignment-2/solution.js",
+    "root": "node dist/solution.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamalckb531/level2-assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Tamalckb531/level2-assignments/issues"
+  },
+  "homepage": "https://github.com/Tamalckb531/level2-assignments#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
